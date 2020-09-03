@@ -1,0 +1,12 @@
+/Users/jinyeob/Projects/csharpPractice/csharpPractice/bin/Debug/netcoreapp3.1/csharpPractice.deps.json
+/Users/jinyeob/Projects/csharpPractice/csharpPractice/bin/Debug/netcoreapp3.1/csharpPractice.runtimeconfig.json
+/Users/jinyeob/Projects/csharpPractice/csharpPractice/bin/Debug/netcoreapp3.1/csharpPractice.runtimeconfig.dev.json
+/Users/jinyeob/Projects/csharpPractice/csharpPractice/bin/Debug/netcoreapp3.1/csharpPractice.dll
+/Users/jinyeob/Projects/csharpPractice/csharpPractice/bin/Debug/netcoreapp3.1/csharpPractice.pdb
+/Users/jinyeob/Projects/csharpPractice/csharpPractice/obj/Debug/netcoreapp3.1/csharpPractice.csprojAssemblyReference.cache
+/Users/jinyeob/Projects/csharpPractice/csharpPractice/obj/Debug/netcoreapp3.1/csharpPractice.AssemblyInfoInputs.cache
+/Users/jinyeob/Projects/csharpPractice/csharpPractice/obj/Debug/netcoreapp3.1/csharpPractice.AssemblyInfo.cs
+/Users/jinyeob/Projects/csharpPractice/csharpPractice/obj/Debug/netcoreapp3.1/csharpPractice.csproj.CoreCompileInputs.cache
+/Users/jinyeob/Projects/csharpPractice/csharpPractice/obj/Debug/netcoreapp3.1/csharpPractice.dll
+/Users/jinyeob/Projects/csharpPractice/csharpPractice/obj/Debug/netcoreapp3.1/csharpPractice.pdb
+/Users/jinyeob/Projects/csharpPractice/csharpPractice/obj/Debug/netcoreapp3.1/csharpPractice.genruntimeconfig.cache
