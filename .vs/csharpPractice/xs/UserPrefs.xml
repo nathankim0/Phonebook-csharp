@@ -2,15 +2,13 @@
   <MonoDevelop.Ide.ItemProperties.csharpPractice PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="csharpPractice/Program.cs">
     <Files>
-      <File FileName="csharpPractice/Program.cs" Line="44" Column="2" />
+      <File FileName="csharpPractice/Program.cs" Line="161" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="csharpPractice" expanded="True">
-            <Node name="csharpPractice" expanded="True">
-              <Node name="Program.cs" selected="True" />
-            </Node>
+            <Node name="csharpPractice" expanded="True" />
           </Node>
         </State>
       </Pad>

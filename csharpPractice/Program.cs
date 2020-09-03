@@ -10,35 +10,36 @@ namespace Phonebook
             public string Name { get; set; }
             public string Number { get; set; }
         }
+
+        static void Main()
+        {
+            Menu menu = new Menu();
+            menu.Start();
+        }
+
         public class Menu
         {
-            public Menu()
+            public void ShowMenu() // 메뉴창 출력
             {
-            }
-            public void ShowMenu()
-            {
+                Console.WriteLine("");
                 Console.WriteLine("---------");
                 Console.WriteLine("1. Show List");
                 Console.WriteLine("2. Add");
                 Console.WriteLine("3. Delete");
-                Console.WriteLine("4. Exit");
+                Console.WriteLine("4. Update");
+                Console.WriteLine("5. Exit");
                 Console.WriteLine("---------");
                 Console.Write("Input>> ");
-
             }
-            public string Input()
-            {
-                return Console.ReadLine();
 
-            }
-            public void StartLoop()
+            public void Start()
             {
                 bool done = true;
                 DoLogic doLogic = new DoLogic();
                 while (done)
                 {
                     ShowMenu();
-                    switch (Input())
+                    switch (Console.ReadLine())
                     {
                         case "1":
                             doLogic.ShowList();
@@ -50,16 +51,20 @@ namespace Phonebook
                             doLogic.Delete();
                             break;
                         case "4":
+                            doLogic.Update();
+                            break;
+                        case "5":
                             done = false;
                             break;
                         default:
                             Console.WriteLine("please input again");
                             break;
                     }
+                    Console.WriteLine("");
                 }
             }
-
         }
+
         public class DoLogic
         {
             private List<Info> info = new List<Info>();
@@ -85,7 +90,7 @@ namespace Phonebook
             }
             public void Delete()
             {
-                Console.Write("Input Name: ");
+                Console.Write("Find Name: ");
                 string name = Console.ReadLine();
 
                 bool isThere = false;
@@ -101,7 +106,7 @@ namespace Phonebook
                     }
                 }
                 */
-               
+
                 for (int ii = 0; ii < info.Count; ii++)
                 {
                     if (info[ii].Name == name)
@@ -123,13 +128,38 @@ namespace Phonebook
                     Console.WriteLine("No name.");
                 }
             }
-        }
 
+            public void Update()
+            {
+                Console.Write("Find Name: ");
+                string name = Console.ReadLine();
 
-        static void Main()
-        {
-            Menu menu = new Menu();
-            menu.StartLoop();
+                bool isThere = false;
+
+                for (int ii = 0; ii < info.Count; ii++)
+                {
+                    if (info[ii].Name == name)
+                    {
+                        Console.Write("Update Name: ");
+                        info[ii].Name = Console.ReadLine();
+
+                        Console.Write("Update Number: ");
+                        info[ii].Number = Console.ReadLine();
+
+                        isThere = true;
+                    }
+                }
+
+                if (isThere)
+                {
+                    Console.WriteLine("----------------");
+                    Console.WriteLine("Update Complete.");
+                }
+                else
+                {
+                    Console.WriteLine("No name.");
+                }
+            }
         }
     }
 }
